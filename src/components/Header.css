@@ -1,0 +1,45 @@
+.headnav {
+    background-color: #d2f5e3;
+    
+}
+.header__logoImage {
+    height:80px;
+    width:80px;
+    border-radius: 50%;
+}
+
+#element{
+    color:#94b4a4;
+    padding:14px 16px;
+    text-decoration: none;
+    font-size:20px;
+}
+
+#element:hover {
+    color: #389393;
+    text-decoration: none;
+}
+
+#basic-nav-dropdown {
+    color:#94b4a4;
+    padding:14px 16px;
+    text-decoration: none;
+    font-size:20px;
+}
+
+#basic-nav-dropdown:hover {
+    color: #389393;
+    text-decoration: none;
+}
+
+.navbar__link--active {
+    color: #94b4a4;
+    font-size:16px;
+} 
+#bar {
+    color:white;
+}
+#navbar-toggler-icon {
+    background-image: url("https:mdbootstrap.com/img/svg/hamburger3.svg?color=ffffff");
+}
+ 

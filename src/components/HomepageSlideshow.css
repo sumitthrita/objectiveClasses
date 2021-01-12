@@ -1,0 +1,17 @@
+.first{
+    background-color: aquamarine;
+    height: 270px;
+}
+.second{
+    background-color: black;
+    height: 270px;
+}
+.third{
+    background-color: red;
+    height: 270px;
+}
+.home{
+    padding: 15px 30px;
+    font-size: 15px;
+    text-align: justify;
+}
