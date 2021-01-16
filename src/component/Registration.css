@@ -1,0 +1,128 @@
+.registration {
+    height: 90vh;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.inputSection {
+    width:50%;
+    position: relative;
+    height:50px;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+.inputSectionAddress {
+    width: 50%;
+    position: relative;
+    height: 80px;
+    overflow: hidden;
+    margin:10px 0;
+}
+
+.form__input {
+    position: absolute;
+    width: 100%;
+    /* height: 100%; */
+    color: #595f6e;
+    padding: 25px 0px 2px 5px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.form__inputAddress {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: #595f6e;
+    padding:18px 0 2px 5px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+
+.form__label {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    pointer-events:none;
+    border-bottom: 1px solid black;
+}
+
+.form__labelAddress {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    pointer-events:none;
+    border-bottom: 1px solid black;
+    /* background-color:greenyellow; */
+}
+
+.form__label::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-bottom: 3px solid #5fa8d3;
+    left: 0px;
+    bottom: -1px;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+
+.form__labelAddress::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /* background-color: green; */
+    border-bottom: 3px solid #5fa8d3;
+    left: 0px;
+    transform: translateX(-100%);
+    bottom: -2px;
+    transition: all 0.3s ease;
+}
+
+.form__content {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    transition: all 0.3s ease;
+}
+
+.form__input:focus + .form__label .form__content, 
+.form__input:valid + .form__label .form__content {
+    transform: translateY(-150%);
+    font-size: 13px;
+    color: #5fa8d3;
+}
+
+.form__inputAddress:focus + .form__labelAddress .form__content,
+.form__inputAddress:valid + .form__labelAddress .form__content {
+    transform: translateY(-390%);
+    font-size: 13px;
+    color: #5fa8d3;
+}
+
+.form__input:focus + .form__label::after,
+.form__input:valid + .form__label::after {
+    transform: translateX(0%);
+}
+
+.form__inputAddress:focus + .form__labelAddress::after, 
+.form__inputAddress:valid + .form__labelAddress::after {
+    transform: translateX(0%);
+}
+
+.form__inputAddress:focus + .form__inputAddress {
+    padding-top: 20px;
+}
