@@ -18,7 +18,7 @@ class Registration extends Component {
     handleChange(e) {
     //    var stateName=e.target.name;
     
-        this.setState({course:e.target.value})
+        this.setState({address:e.target.value})
     }
 
     render(){
@@ -43,7 +43,7 @@ class Registration extends Component {
                     </label>
                 </div>
                 <div className="inputSectionAddress" >
-                    <textarea rows="3" cols="48" maxLength="100" name="address" value={this.state.address} className="form__inputAddress" autoComplete="off" required />
+                    <textarea rows="3" cols="48" maxLength="100" name="address" value={this.state.address} className="form__inputAddress" autoComplete="off" required onChange={this.handleChange} />
                     <label for ="address" className="form__labelAddress" >
                         <span className="form__content" >Address</span>
                     </label>
