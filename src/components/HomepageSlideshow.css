@@ -1,17 +1,27 @@
+h1{
+    font-weight: 700;
+    font-size: 3rem;
+}
+
 .first{
     background-color: aquamarine;
-    height: 270px;
+    height: 240px;
 }
 .second{
     background-color: black;
-    height: 270px;
+    height: 240px;
 }
 .third{
     background-color: red;
-    height: 270px;
+    height: 240px;
 }
 .home{
-    padding: 15px 30px;
-    font-size: 15px;
+    font-size: 14px;
     text-align: justify;
+    padding-top: 2.5%;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+.about{
+    padding: 2% 5%;
 }
