@@ -11,7 +11,7 @@ const Faculty = () => {
             <div className="container-flex">
                 {FacultyData.map((faculty) => (
                     <FacultyCard 
-                        key={faculty.id}
+                        key={faculty.name}
                         img={faculty.img}
                         name={faculty.name}
                         description={faculty.description}

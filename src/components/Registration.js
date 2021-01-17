@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Button from './Button';
 import "./Registration.css";
 
 
@@ -59,7 +60,9 @@ class Registration extends Component {
                         <span className="form__content">Course</span>
                     </label>
                 </div>
-                <h1>{this.state.course} </h1>
+                <div  >
+                    <Button buttonName="Register"  />
+                </div> 
             </div>
         );
     };
