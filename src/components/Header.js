@@ -18,14 +18,7 @@ return (
         <NavLink to="/" id="element" exact activeClassName="navbar__link--active"   >Home</NavLink>
         <NavLink to="/Courses" id="element"  activeClassName="navbar__link--active">Courses</NavLink>
         <NavLink to="/registration" id="element"  activeClassName="navbar__link--active">Admission</NavLink>
-
-        <NavDropdown title="Faculty" id="basic-nav-dropdown">
-            <NavDropdown.Item href="#action/3.1">Maths</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.2">Physics</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.3">Chemistry</NavDropdown.Item>
-            <NavDropdown.Divider />
-            <NavDropdown.Item href="#action/3.4">Director</NavDropdown.Item>
-        </NavDropdown>
+        <NavLink to="/faculty" id="element"  activeClassName="navbar__link--active">Faculty</NavLink>
         <NavLink to="/contact" id="element" activeClassName="navbar__link--active">Contact</NavLink>
         <NavLink to="/login" id="element"  activeClassName="navbar__link--active">Login</NavLink>
         <NavLink to="/signup" id="element" activeClassName="navbar__link--active" >SignUp</NavLink>
