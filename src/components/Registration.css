@@ -1,11 +1,35 @@
 .registration {
     height: 95vh;
     margin-top: 5px;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    overflow: hidden;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.registration::before {
+    content: "";
+    height: 30%;
+    width: 25%;
+    border-radius: 50%;
+    position: absolute;
+    transform: translateX(-90%) translateY(50%);
+    background-image: linear-gradient(to left, rgba(117,120,128,0.2), rgba(117,120,128,0.5), rgba(95,138,211,0.8));
+}
+
+.registration::after {
+    content: "";
+    height: 90%;
+    width: 40%;
+    position: absolute;
+    background-image: linear-gradient(to right, rgba(117,120,128,0.2), rgba(117,120,128,0.5), rgba(95,138,211,0.8));
+    top: 0;
+    z-index: -3;
+    transform: translateX(80%) rotate(40deg);
 }
 
 .inputSection {

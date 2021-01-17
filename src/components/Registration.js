@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Header from './Header';
 import Button from './Button';
 import "./Registration.css";
 
@@ -24,6 +25,8 @@ class Registration extends Component {
 
     render(){
         return (
+            <div>
+            <Header />
             <div className="registration" >
                 <div className="inputSection" >
                     <input type="text" name="name" value={this.state.name} className="form__input" autoComplete="off" required onChange={this.handleChange} />
@@ -63,6 +66,7 @@ class Registration extends Component {
                 <div  >
                     <Button buttonName="Register"  />
                 </div> 
+            </div>
             </div>
         );
     };
