@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Header from './Header';
 import Button from './Button';
 import "./Registration.css";
+import Footer from './Footer';
 
 
 class Registration extends Component {
@@ -67,6 +68,7 @@ class Registration extends Component {
                     <Button buttonName="Register"  />
                 </div> 
             </div>
+            <Footer />
             </div>
         );
     };

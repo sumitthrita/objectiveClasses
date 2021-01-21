@@ -3,6 +3,7 @@ import Header from './Header';
 import './Faculty.css'
 import FacultyCard from './FacultyCard';
 import FacultyData from './FacultyData';
+import Footer from './Footer';
 
 const Faculty = () => {
     return(
@@ -18,6 +19,7 @@ const Faculty = () => {
                     />
                 ))}
             </div>
+            <Footer />
         </div>
     );
 }
