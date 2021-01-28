@@ -51,9 +51,10 @@
   padding:5px 15px;
 }
 
-/* .contactButton {
-  margin-top:30px;
-} */
+.contactButton {
+  margin-bottom: 20px;
+}
+
 
 .barid{
     align-items: center;
@@ -113,6 +114,11 @@
         align-self: stretch;
         flex: 1;
         max-width: 100%;
+    }
+
+    .contactButton {
+      width: 40vw;
+      height: 20vh;
     }
     
 }

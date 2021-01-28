@@ -4,7 +4,6 @@ import "./Contact.css";
 import ContactInfo from "./ContactInfo";
 import Header from "./Header";
 import Footer from "./Footer";
-import {Link} from "react-router-dom";
 import Image from "./assets/logo.jpg";
 
 class Contact extends Component {

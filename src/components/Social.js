@@ -9,7 +9,7 @@ const Social = () => {
                 <li className="tab">
                     <div className="social youtube">
                         {/* use target so that link opens in new tab */}
-            <a href="https://www.youtube.com" target="blanck">Youtube</a>
+            <a href="https://www.youtube.com/channel/UCE98fUsVj8JJWGjHCSkHjPg" target="blank">Youtube</a>
                     </div>
                     <div className="content">
                         <h1>Youtube</h1>
@@ -22,18 +22,18 @@ const Social = () => {
                     </div>
                     <div className="content">
                         <h1>Twitter</h1>
-                        <p>Follow me on Twitter for video and course updates, article & blogshares and more</p>
+                        <p>Follow us on Twitter for video, course updates and more</p>
                     </div>
                 </li>
                 <li className="tab">
                     <div className="social facebook">
-                        <a href="https://facebook.com/traversymedia" target="_blank">Facebook</a>
+                        <a href="https://www.facebook.com/objectiveclassesedu" target="_blank">Facebook</a>
                     </div>
                     <div className="content">
                         <h1>Facebook</h1>
                         <p>
-                            Follow me on Facebook to stay up to date with Traversy Media and
-                            get notified of new videos, publications, etc</p>
+                            Follow us on Facebook to stay up to date with Objective Classes and
+                            get notified of new videos</p>
                     </div>
                 </li>
                 <li className="tab">
@@ -43,19 +43,19 @@ const Social = () => {
                     </div>
                     <div className="content">
                         <h1>LinkedIn</h1>
-                        <p>Connect with me on a professional level on Linkedin</p>
+                        <p>Connect with us on a professional level on Linkedin</p>
                     </div>
                 </li>
                 <li className="tab">
                     <div className="social instagram">
-                        <a href="http://instagram.com/traversymedia" target="_blank">Instagram</a>
+                        <a href="https://www.instagram.com/objectiveclasses/?hl=en" target="_blank">Instagram</a>
                     </div>
                     <div className="content">
                         <h1>Instagram</h1>
-                        <p>Follow me on Instragram for a more personal look into my life and work</p>
+                        <p>Follow us on Instragram for a more personal look into our work</p>
                     </div>
                 </li>
-                <li className="tab">
+                {/* <li className="tab">
                     <div className="social github">
                         <a href="http://github.com/bradtraversy" target="_blank">Github</a>
                     </div>
@@ -63,7 +63,7 @@ const Social = () => {
                         <h1>Github</h1>
                         <p>Check out my Github for tutorial code, my personal projects and more</p>
                     </div>
-                </li>
+                </li> */}
             </ul>
         </div>
     );
