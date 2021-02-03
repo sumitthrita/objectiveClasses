@@ -25,8 +25,7 @@ class Contact extends Component {
 
     render(){
         return (
-            <div>
-            <Header />
+            <div id="contact-section">
             <div className="contact" >
                 <div className="inputSection" >
                     <input type="text" name="name" value={this.state.name} className="form__input" autoComplete="off" required onChange={this.handleChange} />
@@ -56,7 +55,6 @@ class Contact extends Component {
                     <Button buttonName="Contact"  />
                 </div> 
             </div>
-            <Footer />
             </div>
         );
     };

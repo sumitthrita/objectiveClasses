@@ -12,7 +12,8 @@ h2 {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    margin: 4rem auto;
+    margin: 0 auto 2rem;
+    padding-top: 5rem;
     max-width: 90%;
 }
 

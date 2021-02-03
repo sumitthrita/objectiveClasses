@@ -18,8 +18,8 @@ return (
         <NavLink to="/" id="element" exact activeClassName="navbar__link--active"   >Home</NavLink>
         <NavLink to="/Courses" id="element"  activeClassName="navbar__link--active">Courses</NavLink>
         <NavLink to="/registration" id="element"  activeClassName="navbar__link--active">Admission</NavLink>
-        <NavLink to="/faculty" id="element"  activeClassName="navbar__link--active">Faculty</NavLink>
-        <NavLink to="/contact" id="element" activeClassName="navbar__link--active">Contact</NavLink>
+        <Nav.Link href="/#faculty-section" id="element">Faculty</Nav.Link>
+        <Nav.Link href="/#contact-section" id="element">Contact</Nav.Link>
         <NavLink to="/login" id="element"  activeClassName="navbar__link--active">Login</NavLink>
         <NavLink to="/signup" id="element" activeClassName="navbar__link--active" >SignUp</NavLink>
       </Nav>
