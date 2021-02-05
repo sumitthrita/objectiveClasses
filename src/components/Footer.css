@@ -25,6 +25,8 @@ ul {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 1rem;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .footer_logo {

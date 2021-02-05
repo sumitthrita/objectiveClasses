@@ -12,16 +12,37 @@ class Registration extends Component {
             name: "",
             contact:"",
             email:"",
-            course:"",
-            address:""
+            address:"",
+            course:""
         };
         this.handleChange= this.handleChange.bind(this);
     };
 
     handleChange(e) {
-    //    var stateName=e.target.name;
+        const name = e.target.name;
+        const value = e.target.value;
+
+        switch (name) {
+            case "name":
+                this.setState({name: value});
+                break;
+            case "contact":
+                this.setState({contact: value});
+                break;
+            case "email":
+                this.setState({email: value});
+                break;
+            case "address":
+                this.setState({address: value});
+                break;
+            case "course":
+                this.setState({course: value});
+                break;
+            default:
+                break;
+        }
     
-        this.setState({address:e.target.value})
+        // this.setState({address:e.target.value})
     }
 
     render(){
@@ -36,13 +57,13 @@ class Registration extends Component {
                     </label>
                 </div>
                 <div className="inputSection" >
-                    <input type="text" maxLength="10" name="contact" value={this.state.contact} className="form__input" autoComplete="off" required />
+                    <input type="text" maxLength="10" name="contact" value={this.state.contact} className="form__input" autoComplete="off" required onChange={this.handleChange}/>
                     <label for ="contact" className="form__label" >
                         <span className="form__content" >Contact</span>
                     </label>
                 </div>
                 <div className="inputSection" >
-                    <input type="email" name="email" value={this.state.email} className="form__input" autoComplete="off" required />
+                    <input type="email" name="email" value={this.state.email} className="form__input" autoComplete="off" required onChange={this.handleChange} />
                     <label for ="email" className="form__label" >
                         <span className="form__content" >Email Id</span>
                     </label>
@@ -55,7 +76,9 @@ class Registration extends Component {
                 </div>
                 <div className="inputSection" >
                     <select value={this.state.course} className="form__input" name="course" onChange={this.handleChange} >
-                        <option value="JEE Mains & Advance">JEE Mains & Advance</option>
+                        <option value="JEE Mains Crash Course">Crash </option>
+                        <option value="NEET Crash Course">Crash C)</option>
+                        <option value="JEE Mains & Advance">JEE e</option>
                         <option value="JEE Mains">JEE Mains</option>
                         <option value="JEE Advance">JEE Advance</option>
                         <option value="NEET">NEET</option>

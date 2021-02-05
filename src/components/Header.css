@@ -1,5 +1,5 @@
 .headnav {
-    background-color:#fff;
+    background-color:#1687a7;
     
 }
 .header__logoImage {
@@ -9,14 +9,14 @@
 }
 
 #element{
-    color:#94b4a4;
+    color:#fff;
     padding:14px 16px;
     text-decoration: none;
     font-size:20px;
 }
 
 #element:hover {
-    color: #389393;
+    color: #000;
     text-decoration: none;
 }
 
