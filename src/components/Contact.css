@@ -32,7 +32,7 @@
   transform: translateX(80%) rotate(40deg);
 }
 
-.inputSection {
+.c__inputSection {
   width:50%;
   position: relative;
   height:50px;
@@ -40,7 +40,7 @@
   margin: 6px 0;
 }
 
-.inputSectionResponse {
+.c__inputSectionResponse {
   width: 50%;
   position: relative;
   height: 80px;
@@ -48,7 +48,7 @@
   margin:10px 0;
 }
 
-.form__input {
+.c__form__input {
   position: absolute;
   width: 100%;
   /* height: 100%; */
@@ -59,7 +59,7 @@
   font-size: 16px;
 }
 
-.form__inputResponse {
+.c__form__inputResponse {
   position: absolute;
   width: 100%;
   /* height: 100%; */
@@ -71,7 +71,7 @@
   /* background-color: greenyellow; */
 }
 
-.form__label {
+.c__form__label {
   position: absolute;
   bottom: 0px;
   left: 0px;
@@ -81,7 +81,7 @@
   border-bottom: 1px solid black;
 }
 
-.form__labelResponse {
+.c__form__labelResponse {
   position: absolute;
   bottom: -8px;
   left: 0px;
@@ -93,7 +93,7 @@
   /* background-color:greenyellow; */
 }
 
-.form__label::after {
+.c__form__label::after {
   content: "";
   position: absolute;
   height: 100%;
@@ -105,7 +105,7 @@
   transition: all 0.3s ease;
 }
 
-.form__labelResponse::after {
+.c__form__labelResponse::after {
   content: "";
   position: absolute;
   height: 100%;
@@ -118,38 +118,38 @@
   transition: all 0.3s ease;
 }
 
-.form__content {
+.c__form__content {
   position: absolute;
   bottom: 5px;
   left: 5px;
   transition: all 0.3s ease;
 }
 
-.form__input:focus + .form__label .form__content, 
-.form__input:valid + .form__label .form__content {
+.c__form__input:focus + .c__form__label .c__form__content, 
+.c__form__input:valid + .c__form__label .c__form__content {
   transform: translateY(-100%);
   font-size: 13px;
   color: #5fa8d3;
 }
 
-.form__inputResponse:focus + .form__labelResponse .form__content,
-.form__inputResponse:valid + .form__labelResponse .form__content {
+.c__form__inputResponse:focus + .c__form__labelResponse .c__form__content,
+.c__form__inputResponse:valid + .c__form__labelResponse .c__form__content {
   transform: translateY(-292%);
   font-size: 13px;
   color: #5fa8d3;
 }
 
-.form__input:focus + .form__label::after,
-.form__input:valid + .form__label::after {
+.c__form__input:focus + .c__form__label::after,
+.c__form__input:valid + .c__form__label::after {
   transform: translateX(0%);
 }
 
-.form__inputResponse:focus + .form__labelResponse::after, 
-.form__inputResponse:valid + .form__labelResponse::after {
+.c__form__inputResponse:focus + .c__form__labelResponse::after, 
+.c__form__inputResponse:valid + .c__form__labelResponse::after {
   transform: translateX(0%);
 }
 
-.form__inputResponse:focus + .form__inputResponse {
+.c__form__inputResponse:focus + .c__form__inputResponse {
   padding-top: 20px;
 }
 
