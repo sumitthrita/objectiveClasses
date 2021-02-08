@@ -1,0 +1,18 @@
+.coursesMain {
+    margin: 30px 5vw;
+    width: 90vw;
+}
+
+.coursesHeader {
+    text-align: center;
+}
+
+.coursesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto 2rem;
+    padding-top: 1rem;
+    max-width: 90%;
+}

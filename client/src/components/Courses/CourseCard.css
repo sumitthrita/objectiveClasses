@@ -1,0 +1,21 @@
+.courseCardMain {
+    text-align: center;
+    width: 320px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.666;
+    /* height: 380px; */
+    margin-bottom: 3rem;
+    padding: 2rem;
+    border-radius: 3px;
+    background-color: rgb(117, 209, 204);
+}
+
+.courseTitle {
+    font-weight: 700;
+}
+
+.courseBody {
+    margin-top: 30px;
+}

@@ -1,0 +1,46 @@
+.faculty-body{
+    background: #c0d2d4;
+}
+.cardTitle {
+    color: #2ec2b0;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.container-flex{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto 2rem;
+    padding-top: 5rem;
+    max-width: 90%;
+}
+
+.card{
+    text-align: center;
+    width: 320px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.666;
+    /* height: 380px; */
+    margin-bottom: 3rem;
+    padding: 2rem;
+    border-radius: 3px;
+    box-shadow: 0 2px 0 rgba(143, 15, 15, 0.05), 0 5px 20px rgba(22, 158, 106, 0.1);
+    background-color: #fff;
+    transition: all 0.5s ease-in-out;
+}
+
+.faculty-img{
+    height: 240px;
+    padding-bottom: 0.8rem;
+}
+
+
+@media(max-width: 710px) {
+    .container-flex {
+        justify-content: center;
+    }
+}

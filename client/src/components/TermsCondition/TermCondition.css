@@ -1,0 +1,20 @@
+.termConditionMain {
+    margin: 30px 25vw;
+    width: 50vw;
+}
+
+.termConditionTitle {
+    margin: 5px 10vw;
+}
+
+ol {
+    list-style-type: disc;
+    margin: 30px 3vw;
+}
+
+@media screen and (max-width:500px) {
+    .termConditionMain {
+        width: 70vw;
+        margin: 30px 15vw;
+    }
+}

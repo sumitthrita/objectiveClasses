@@ -1,0 +1,193 @@
+.contact {
+  height: 95vh;
+  margin-top: 5px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.contact::before {
+  content: "";
+  height: 30%;
+  width: 25%;
+  border-radius: 50%;
+  position: absolute;
+  transform: translateX(-90%) translateY(50%);
+  background-image: linear-gradient(to left, rgba(117,120,128,0.2), rgba(117,120,128,0.5), rgba(95,138,211,0.8));
+}
+
+.contact::after {
+  content: "";
+  height: 90%;
+  width: 40%;
+  position: absolute;
+  background-image: linear-gradient(to right, rgba(117,120,128,0.2), rgba(117,120,128,0.5), rgba(95,138,211,0.8));
+  top: 0;
+  z-index: -3;
+  transform: translateX(80%) rotate(40deg);
+}
+
+.c__inputSection {
+  width:50%;
+  position: relative;
+  height:50px;
+  overflow: hidden;
+  margin: 6px 0;
+}
+
+.c__inputSectionMessage {
+  width: 50%;
+  position: relative;
+  height: 80px;
+  overflow: hidden;
+  margin:10px 0;
+}
+
+.c__form__input {
+  position: absolute;
+  width: 100%;
+  /* height: 100%; */
+  color: #595f6e;
+  padding: 15px 0px 2px 5px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.c__form__inputMessage {
+  position: absolute;
+  width: 100%;
+  /* height: 100%; */
+  color: #595f6e;
+  padding:16px 0 2px 5px;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  /* background-color: greenyellow; */
+}
+
+.c__form__label {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  pointer-events:none;
+  border-bottom: 1px solid black;
+}
+
+.c__form__labelMessage {
+  position: absolute;
+  bottom: -8px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  pointer-events:none;
+  border-bottom: 1px solid black;
+  /* background-color: grey; */
+  /* background-color:greenyellow; */
+}
+
+.c__form__label::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid #5fa8d3;
+  left: 0px;
+  bottom: -1px;
+  transform: translateX(-100%);
+  transition: all 0.3s ease;
+}
+
+.c__form__labelMessage::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  /* background-color: green; */
+  border-bottom: 3px solid #5fa8d3;
+  left: 0px;
+  transform: translateX(-100%);
+  bottom: -1px;
+  transition: all 0.3s ease;
+}
+
+.c__form__content {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  transition: all 0.3s ease;
+}
+
+.c__form__input:focus + .c__form__label .c__form__content, 
+.c__form__input:valid + .c__form__label .c__form__content {
+  transform: translateY(-100%);
+  font-size: 13px;
+  color: #5fa8d3;
+}
+
+.c__form__inputMessage:focus + .c__form__labelMessage .c__form__content,
+.c__form__inputMessage:valid + .c__form__labelMessage .c__form__content {
+  transform: translateY(-292%);
+  font-size: 13px;
+  color: #5fa8d3;
+}
+
+.c__form__input:focus + .c__form__label::after,
+.c__form__input:valid + .c__form__label::after {
+  transform: translateX(0%);
+}
+
+.c__form__inputMessage:focus + .c__form__labelMessage::after, 
+.c__form__inputMessage:valid + .c__form__labelMessage::after {
+  transform: translateX(0%);
+}
+
+.c__form__inputMessage:focus + .c__form__inputMessage {
+  padding-top: 20px;
+}
+
+.c_ButtonMain {
+  width: 140px;
+  height: 8vh;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8%;
+}
+
+.c_ButtonName {
+  letter-spacing: 0.2em;
+  background-color:#80bdcc;
+  font-size: 20px;
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+}
+
+@keyframes example {
+  from {background-color: #80bdcc;}
+  to {background-color: #0898ec;}
+}
+
+input[type="submit"].c_ButtonName:hover {
+  animation-name: example;
+  animation-duration: 0.5s;
+}
+
+@media screen and (max-width: 500px) {
+ .c__inputSection {
+     width: 80%;
+ }
+ .c__inputSectionMessage {
+     width: 80%;
+ }
+}

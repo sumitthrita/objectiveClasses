@@ -1,0 +1,20 @@
+.feeStructureMain {
+    width: 80vw;
+    margin: 30px 10vw;
+}
+
+.feeImageSection {
+    width: 80vw;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.feeImage {
+    width: 80vw;
+    height: inherit;
+}
+
+.feeSpace {
+    height: 30px;
+    width: auto;
+}

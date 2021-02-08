@@ -1,0 +1,11 @@
+.advertise {
+    height: 75vh;
+    width: 90vw;
+    margin:10px 5vw ;
+}
+
+@media screen and (max-width:500px) {
+    .advertise {
+        height: 50vh;
+    }
+}
